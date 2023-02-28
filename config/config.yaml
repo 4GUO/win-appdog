@@ -1,0 +1,30 @@
+MainProcessName : zhgAppDog.exe # 主程序进程名
+ActMqttTopic : zhg/appdog/act
+StatusMqttTopic : zhg/appdog/status
+ProcessStatusCheckRate : 60
+
+Mqtt:
+  Host : mqtt://127.0.0.1:19007
+  ClientId : zhg-app-dog
+  Username : zhg1
+  Password : Zy3K6PkSpGf43
+  CleanSession : true
+
+Apps:
+  -
+    Name : sublime 测试程序
+    ProcessName : Code.exe
+    ShortcutName : D:\Coding\project\appDog\shortcut\tc3
+    UniqueId : 1.0001
+  -
+    Name: PHPSTORM 测试程序
+    ProcessName: phpstorm64.exe
+    ShortcutName: D:\Coding\project\appDog\shortcut\tc2
+    UniqueId: 1.0002
+
+  - Name: 网易云 测试程序
+    ProcessName: cloudmusic.exe
+    ShortcutName: D:\Coding\project\appDog\shortcut\ym
+    UniqueId: 1.0003
+
+
